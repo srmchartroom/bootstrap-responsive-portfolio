@@ -4,15 +4,22 @@
     background: linear-gradient(0deg, rgba(160,160,160,1) 5%, rgba(255,255,255,1) 65%);
 }
 
-/* Positions the portfolio project title to the bottom of the image, sets it to full width, and sets the font-color to a slightly muted gray. */
-.port-project-title {
-    position: absolute; 
-    bottom: 0px; 
-    width: 100%;
+/* Sets the font-color of the portfolio project cards to a slightly muted gray by default. */
+.port-project-card {
     color: #DCDEE0;
 }
 
 /* Adds a slight hover effect on the title whitening the font color. */
-.port-project-title:hover {
-    color: #fff;
+.port-project-card:hover {
+    color: #ffffff;
 }
+
+/* Positions the portfolio project title to the bottom of the image, sets it to full width. */
+.port-project-title {
+    position: absolute; 
+    bottom: 0px; 
+    width: 100%;
+    /* color: #DCDEE0; */
+}
+
+
