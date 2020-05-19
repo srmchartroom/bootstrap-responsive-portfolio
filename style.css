@@ -1,19 +1,18 @@
-/* Style.css for additional styles and tweaks beyond default bootstrap styles. */
-/* html { */
-    /* height: 100%; */
-    /* position: relative; */
-/* } */
-
-/* body { */
-    /* height: 100%; */
-/* } */
-
+/* Sets a bg gradient on the main content area from white to light gray. */
 .bg-gradient-srm {
     background: rgb(51,51,51);
     background: linear-gradient(0deg, rgba(160,160,160,1) 5%, rgba(255,255,255,1) 65%);
 }
 
-/* main { */
-    /* position: absolute; */
-    /* min-height: 100%; */
-/* } */
+/* Positions the portfolio project title to the bottom of the image, sets it to full width, and sets the font-color to a slightly muted gray. */
+.port-project-title {
+    position: absolute; 
+    bottom: 0px; 
+    width: 100%;
+    color: #DCDEE0;
+}
+
+/* Adds a slight hover effect on the title whitening the font color. */
+.port-project-title:hover {
+    color: #fff;
+}
