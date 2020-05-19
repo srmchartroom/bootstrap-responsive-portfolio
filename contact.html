@@ -44,13 +44,34 @@
         <div class="container">    
             <div class="row mt-1">
                 <!-- Contact Section -->
-                <div id="portfolio" class="col-md-12 col-lg-8 shadow p-3 mb-5 bg-white rounded mt-5">
+                <div id="contact" class="col-md-12 col-lg-8 shadow p-3 mb-5 bg-white rounded mt-5">
                     <!-- "Contact" title -->
                     <h1>Contact</h1>
                     <hr>
                     <!-- Contact Form -->
-                    <!-- Form to go here; to leverage bootstrap form components -->
-                    <!-- Required fields are name, email, and message; CTA = submit -->
+                    <form>
+                        <!-- Name Input Field -->
+                        <div class="form-group">
+                            <label for="nameInputField">Name</label>
+                            <input type="text" class="form-control" id="nameInputField" placeholder="Please enter your name." required>
+                        </div>
+                        <!-- Email Input Field -->
+                        <div class="form-group">
+                            <label for="emailInputField">Email</label>
+                            <input type="email" class="form-control" id="emailInputField" placeholder="youremail@example.com" required>
+                        </div>
+                        <!-- Message Input Field (Text Area) -->
+                        <div class="form-group">
+                            <label for="messageInputField">Message</label>
+                            <textarea class="form-control" id="messageInputField" rows="10" placeholder="Please provide a short message." required></textarea>
+                        </div>
+                        <!-- Submit Button -->
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
