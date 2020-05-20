@@ -1,0 +1,8 @@
+/* Custom Styles for Body area of Page */
+
+/* Sets a bg gradient on the main content area from white to light gray. */
+.bg-gradient-srm {
+    background: rgb(51,51,51);
+    background: linear-gradient(0deg, rgba(160,160,160,1) 5%, rgba(255,255,255,1) 65%);
+}
+
