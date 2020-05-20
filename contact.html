@@ -19,10 +19,21 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 <body class="min-vw-100">
-    <!-- Navigation Menu -->   
+    
+    <!-- Navigation Menu -->
+    <!-- /////////////// -->
+    <!-- Bootstrap 4 classes Used:
+        * .nav recognizes and styles section as a nav.
+        * .bg-dark applies a dark gray bg to the nav div/container.
+        * .container applies a container within the nav section to ensure the width appropriately matches the content area and lines up.
+        * .my-auto applies a top and bottom margin of auto for centered spacing vertically.
+        * .px-0 sets the padding left and right to 0.
+        * .min-h-100 sets the minimum height of the internal nav container to 100%.
+    -->   
     <nav class="nav bg-dark">
-        <div class="container my-auto pl-0 pr-0 min-h-100">
-            <!-- Site name/brand/logo -->
+        <div class="container my-auto px-0 min-h-100">
+            <!-- Site name/brand/logo Container -->
+            <!-- ////////////////////////////// -->
             <!-- Bootstrap 4 classes Used:
                 * .d-sm-flex & .d-md-inline-flex sets the brand/logo div to flex full width on mobile and inline on medium devices and up.
                 * .mx-0 .my-0 sets margins to 0.
@@ -31,13 +42,15 @@
                 * .text-center aligns the brand/logo h1 text to center-aligned. 
              -->
             <div class="d-sm-flex d-md-inline-flex mx-0 my-0 py-3 bg-secondary text-center">
+                <!-- Site name/logo -->
+                <!-- ////////////// -->
                 <!-- Bootstrap 4 classes Used:
                     * .px-3 sets left and right padding to ~3rem.
                     * .text-decoration-none removes the standard underline on hover.
                     * .text-white sets the brand/logo text to white
                     * .h1 responsively sizes the brand/logo to title text size appropriate across devices and screen sizes 
                 -->
-                <a class="px-3 text-decoration-none" href="index.html"><span class="text-white h1">Sean McGinnis</span></a>
+                <a class="px-3 text-decoration-none" href="#"><span class="text-white h1">Sean McGinnis</span></a>
             </div>
             <!-- Nav Holder -->
             <!-- Bootstrap 4 classes Used:
