@@ -19,40 +19,89 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 <body class="min-vw-100">
-    <!-- Navigation Menu -->
-    
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container">
+    <!-- Navigation Menu -->   
+    <nav class="nav bg-dark">
+        <div class="container my-auto pl-0 pr-0 min-h-100">
             <!-- Site name/brand/logo -->
-            <a href="#"><span class="navbar-brand mb-0 h1"><span class="text-white-50">Meet</span> Sean McGinnis</span></a>
-            <!-- Hamburger menu icon toggler for menu-reveal on mobile-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Navigation items/links -->
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto justify-content-end">
+            <!-- Bootstrap 4 classes Used:
+                * .d-sm-flex & .d-md-inline-flex sets the brand/logo div to flex full width on mobile and inline on medium devices and up.
+                * .mx-0 .my-0 sets margins to 0.
+                * .py-3 sets top and bottom padding to ~3rem.
+                * .bg-secondary Background sets the background behind the logo/brand to grey
+                * .text-center aligns the brand/logo h1 text to center-aligned. 
+             -->
+            <div class="d-sm-flex d-md-inline-flex mx-0 my-0 py-3 bg-secondary text-center">
+                <!-- Bootstrap 4 classes Used:
+                    * .px-3 sets left and right padding to ~3rem.
+                    * .text-decoration-none removes the standard underline on hover.
+                    * .text-white sets the brand/logo text to white
+                    * .h1 responsively sizes the brand/logo to title text size appropriate across devices and screen sizes 
+                -->
+                <a class="px-3 text-decoration-none" href="#"><span class="text-white h1">Sean McGinnis</span></a>
+            </div>
+            <!-- Nav Holder -->
+            <!-- Bootstrap 4 classes Used:
+                    * .bg-dark sets the background to a dark gray.
+                    * .d-flex sets the div to flex full-width.
+                    * .justify-content-center centers the navigation horizontally when displayed block on its own line
+                    * .py-md-3 adds ~3rem top and bottom padding to medium devices and up
+                    * .float-md-right breaks the block display for medium devices and up, and floats it to the right margin of the container - this results in the nav items showing inline aligned to the right of the brand/logo for all devices except on mobile on which it falls below the logo and is centered on its own line. 
+                -->
+            <div class="bg-dark d-flex justify-content-center py-md-3 float-md-right">
+                <ul class="nav">
                     <!--Currently Active Nav Item: About-->
-                    <a class="nav-item nav-link active" href="#">About <span class="sr-only">(current)</span></a>
+                    <!-- Bootstrap 4 classes Used:
+                        * .nav-item & .nav-link add navigation styles to the list and list items.
+                    -->
+                    <!-- Custom clases used (header.css) 
+                        * .active-page sets the nav item to remain white when the nav item is for the the current page. 
+                    -->
+                    <li class="nav-item"><a class="nav-link active-page" href="">About</a></li>
                     <!-- Inactive Nav Item: Portfolio -->
-                    <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>    
                     <!-- Inactive Nav Item: Contact -->
-                    <a class="nav-item nav-link" href="contact.html">Contact</a>
-                </div>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
             </div>
         </div>
     </nav>
     
     <!-- Page Body -->
+    <!-- Bootstrap 4 classes Used:
+        * .container-fluid allows the body to span the full-width of the viewer widonw.
+        * .min-vh-100 sets the body to expand 100% to the full viewer height
+    -->
+    <!-- Custom clases used (body.css) 
+        * .bg-gradient-srm sets a background gradient on the page. 
+    -->
     <main class="container-fluid bg-gradient-srm min-vh-100">
+        <!-- Internal Content Container -->
+        <!-- Bootstrap 4 classes Used:
+            * .container sets a container object to allow use of Bootstrap's grid elements like rows and columns for layout.
+            * row establishes a basis for column layout.
+            * .mt-1 sets a top margin of ~0.75 rem
+         -->
         <div class="container">    
             <div class="row mt-1">
                 <!-- About Section -->
-                <div id="about-me" class="col-md-12 col-lg-8 shadow p-3 mb-5 bg-white rounded mt-5">
+                <!-- Bootstrap 4 classes Used:
+                    * .col-md-12 sets the section to full width for devices <= medium-sized.
+                    * .col-lg-8 sets a column size that is ~3/4 of the screen width. 
+                    * .bg-white-rounded sets the background to white and rounds the corners
+                    * .shadow sets a regular background shadow on a div
+                    * .p-3 sets padding on all sides to be ~3rem
+                    * .my-5 sets the top & bottom margin to ~15rem.  
+                -->
+                <div id="about-me" class="col-md-12 col-lg-8 bg-white rounded shadow p-3 my-5">
                     <!-- "About" title -->
                     <h1>About</h1>
                     <hr>
                     <!-- About section bio image -->
+                    <!-- Bootstrap 4 classes Used:
+                        * .image-fluid sets it to 100% to allow sizing up and down based on device screens.
+                        * .float-left sets the image to float left when on medium and up devices the image is displayed with text wrapping around it, rather than 100% wide with text below, as it renders on mobile. 
+                        * .mr-4 sets a right margin of ~4.5rem to the right side of the image so that there is some adequate spacing between the left aligned image and the body text. 
+                    -->
                     <img class="img-fluid float-left mr-4 " src="https://chartroomcreative.com/wp-content/uploads/2020/05/BioPic_SeanRMcGinnis.jpg" width="350px" height="200px" alt="Image of Sean R. McGinnis, MBA - full stack developer, digital strategist, web and UX/UI designer." />
                     <!-- About section copy/bio -->
                     <p>I started my professional career in teaching as one of the highly competitive and prestigious North Carolina Teaching Fellows (NCTF) following my graduation from Appalachian State University with an undergraduate degree in Education - English, with concentrated minors in psychology and Latin.</p>
@@ -88,9 +137,21 @@
         </div>
     </main>
 
+
     <!-- Footer Region -->
+    <!-- Bootstrap 4 classes Used:
+        * .navbar sets a bootstrap class for formatting horizontal full width nav sections.
+        * .fixed-bottom makes the footer navbar stick to the bottom on all views. 
+        * .navbar-dark & .bg-dark set the the div background to dark grey.
+        * .justify-content-center aligns the navbar content to the center. 
+    -->
     <footer class="navbar fixed-bottom navbar-dark bg-dark justify-content-center">
-        <!-- Copyright/Site information footer copy -->    
+        <!-- Copyright/Site information footer copy -->
+        <!-- Bootstrap 4 classes Used:
+            * .small is a custom text treatment from bootstrap for text like copyright messages, etc..
+            * .text-muted sets the color of the footer copy to a medium-to-light gray. 
+            * .mb-0 sets the bottom margin of the paragraph to 0. 
+        -->    
         <p class="small text-muted mb-0">&copy; Sean McGinnis</p></a>
     </footer>
 
