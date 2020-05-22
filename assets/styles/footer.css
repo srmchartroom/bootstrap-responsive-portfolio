@@ -1,0 +1,13 @@
+/* Custom Styles for Footer area of Page */
+
+a.socialicons {
+    color: #6c757d;
+}
+
+a.socialicons:hover {
+    color: #ffffff;
+}
+
+a.socialicons:active {
+    color: #ffffff;
+}
