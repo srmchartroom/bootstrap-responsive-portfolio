@@ -19,3 +19,4 @@
 
 
 *For change-by-change details, please review [commit log](https://github.com/srmchartroom/bootstrap-responsive-portfolio/commits/master).*
+*To view in browser start with the [about page (index.html)](https://srmchartroom.github.io/bootstrap-responsive-portfolio/index.html).*
