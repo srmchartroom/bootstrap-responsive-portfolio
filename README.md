@@ -5,9 +5,9 @@
 ### Task: 
 * Create a Bootstrap-dominant-styled portfolio microsite.
 * The portfolio microsite includes:
-- About page (index.html)
-- Portfolio page (portfolio.html)
-- Contact page (contact.html)
+-- About page (index.html)
+-- Portfolio page (portfolio.html)
+-- Contact page (contact.html)
 
 #### NOTE: A form has been styled and added to the contact.html page but is not yet coded to function on-submit.
 
