@@ -7,7 +7,6 @@
     <!-- Bootstrap CSS addin from CDN (vrsn. 4.5.0) -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- Custom styles and adjustments in style.css -->
-    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="body.css">
     <link rel="stylesheet" href="portfolio.css">
     <!--jQuery addin (vrsn 3.5.1) -->
@@ -17,69 +16,29 @@
     <!-- Bootstrap's javascript addin (4.5.0) -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
-
-<!-- The body of the Page -->
-<!-- //////////////////// -->
-<!-- Bootstrap 4 classes Used:
-    * .min-vw-100 sets the body to extend 100% of the viewer width regardless of device or screen size.
--->
 <body class="min-vw-100">
 
-    <!-- Navigation Menu -->
-    <!-- /////////////// -->
-    <!-- Bootstrap 4 classes Used:
-        * .nav recognizes and styles section as a nav.
-        * .bg-dark applies a dark gray bg to the nav div/container.
-        * .container applies a container within the nav section to ensure the width appropriately matches the content area and lines up.
-        * .my-auto applies a top and bottom margin of auto for centered spacing vertically.
-        * .px-0 sets the padding left and right to 0.
-        * .min-h-100 sets the minimum height of the internal nav container to 100%.
-    -->   
-    <nav class="nav bg-dark">
-        <div class="container my-auto px-0 min-h-100">
-            <!-- Site name/brand/logo Container -->
-            <!-- ////////////////////////////// -->
-            <!-- Bootstrap 4 classes Used:
-                * .d-sm-flex & .d-md-inline-flex sets the brand/logo div to flex full width on mobile and inline on medium devices and up.
-                * .mx-0 .my-0 sets margins to 0.
-                * .py-3 sets top and bottom padding to ~3rem.
-                * .bg-secondary Background sets the background behind the logo/brand to grey
-                * .text-center aligns the brand/logo h1 text to center-aligned. 
-             -->
-            <div class="d-sm-flex d-md-inline-flex mx-0 my-0 py-3 bg-secondary text-center">
-                <!-- Site name/logo -->
-                <!-- ////////////// -->
-                <!-- Bootstrap 4 classes Used:
-                    * .px-3 sets left and right padding to ~3rem.
-                    * .text-decoration-none removes the standard underline on hover.
-                    * .text-white sets the brand/logo text to white
-                    * .h1 responsively sizes the brand/logo to title text size appropriate across devices and screen sizes 
-                -->
-                <a class="px-3 text-decoration-none" href="#"><span class="text-white h1">Sean McGinnis</span></a>
-            </div>
-            <!-- Nav Holder -->
-            <!-- Bootstrap 4 classes Used:
-                    * .bg-dark sets the background to a dark gray.
-                    * .d-flex sets the div to flex full-width.
-                    * .justify-content-center centers the navigation horizontally when displayed block on its own line
-                    * .py-md-3 adds ~3rem top and bottom padding to medium devices and up
-                    * .float-md-right breaks the block display for medium devices and up, and floats it to the right margin of the container - this results in the nav items showing inline aligned to the right of the brand/logo for all devices except on mobile on which it falls below the logo and is centered on its own line. 
-                -->
-            <div class="bg-dark d-flex justify-content-center py-md-3 float-md-right">
-                <ul class="nav">
-                    <!--Currently Active Nav Item: About-->
-                    <!-- Bootstrap 4 classes Used:
-                        * .nav-item & .nav-link add navigation styles to the list and list items.
-                    -->
-                    <!-- Custom clases used (header.css) 
-                        * .active-page sets the nav item to remain white when the nav item is for the the current page. 
-                    -->
-                    <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
-                    <!-- Inactive Nav Item: Portfolio -->
-                    <li class="nav-item"><a class="nav-link active-page" href="">Portfolio</a></li>    
+    <!-- Navigation Menu -->   
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">    
+        <!-- Internal container to hold nav and brand content in the navbar -->
+        <div class="container">
+            <!-- Site name/brand/logo -->
+            <a href="#"><span class="navbar-brand mb-0 h1"><span class="text-white-50">Meet</span> Sean McGinnis</span></a>
+            <!-- Hamburger menu icon toggler for menu-reveal on mobile-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Toggler icon (Bootstrap's default toggle) -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation items/links -->
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto justify-content-end">
+                    <!-- Inactive Nav Item: About-->
+                    <a class="nav-item nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                    <!-- Currently Active Nav Item: Portfolio -->
+                    <a class="nav-item nav-link active" href="#">Portfolio</a>
                     <!-- Inactive Nav Item: Contact -->
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
+                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
