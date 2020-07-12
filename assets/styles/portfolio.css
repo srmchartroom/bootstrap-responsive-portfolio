@@ -2,20 +2,28 @@
 
 /* Sets the font-color of the portfolio project cards to a slightly muted gray by default. */
 .port-project-card {
-    color: #DCDEE0;
+  color: #dcdee0;
+}
+
+.port-links {
+  color: #777;
 }
 
 /* Adds a slight hover effect on the title whitening the font color. */
 .port-project-card:hover {
-    color: #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.port-links:hover {
+  color: #444;
+  text-decoration: none;
 }
 
 /* Positions the portfolio project title to the bottom of the image, sets it to full width. */
 .port-project-title {
-    position: absolute; 
-    bottom: 0px; 
-    width: 100%;
-    /* color: #DCDEE0; */
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  /* color: #DCDEE0; */
 }
-
-
